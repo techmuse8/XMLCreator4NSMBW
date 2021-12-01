@@ -46,7 +46,7 @@ f.write("               </choice>\n           </option>\n       </section>\n    
 f.write("    <patch id=\""+sectionName+"\" root=\"/"+folderName+"\">\n")
 
 if Stage: 
-    f.write("        <folder external=\"Stage\" disc=\"/Stage\" create=\"true\"/>\n
+    f.write("        <folder external=\"Stage\" disc=\"/Stage\" create=\"true\"/>\n"
 if USEUJP:
     f.write("        <folder external=\"US\" disc=\"/US\" create=\"true\"/>\n        <folder external=\"EU\" disc=\"/EU\" create=\"true\" />\n        <folder external=\"JP\" disc=\"/JP\" create=\"true\" />\n")
 f.write("    </patch>\n</wiidisc>")
