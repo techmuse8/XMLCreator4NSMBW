@@ -9,3 +9,7 @@ So far, only tested on the US version and briefly tested on the EUR version. Unt
 # How to run
 
 In a terminal window, run `python3 XMLCreatorNSMBW.py` (`py -3` in substitute of `python3` on Windows) and follow the on screen instructions.
+
+# Credits
+- [EterSky](https://github.com/EterSky): making the original XMLCreator
+- techmuse8: (myself) of course
