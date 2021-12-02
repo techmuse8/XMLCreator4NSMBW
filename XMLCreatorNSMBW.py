@@ -45,7 +45,7 @@ rels=ask("Does your mod use the rels folder?")
 MovieDemo=ask("Does your mod use the MovieDemo folder?")
 HomeButton2=ask("Does your mod use the HomeButton2 folder?")
 
-f.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <region type=\"W\"/>\n       <region type=\"K\"/>\n    <options>\n")
+f.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
 f.write("       <section name=\""+sectionName+"\">\n")
 f.write("           <option name=\""+optionName+"\">\n")
 f.write("               <choice name=\""+choiceName+"\">\n")
