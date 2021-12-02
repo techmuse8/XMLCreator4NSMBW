@@ -12,4 +12,4 @@ In a terminal window, run `python3 XMLCreatorNSMBW.py` (`py -3` in substitute of
 
 # Credits
 - [EterSky](https://github.com/EterSky): making the original XMLCreator
-- techmuse8: (myself) of course
+- [techmuse8](https://github.com/techmuse8): (myself) of course
