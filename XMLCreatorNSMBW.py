@@ -32,18 +32,7 @@ folderName=str(input("What is your mod's folder name? (For example \"nsmbwtest\"
 saveGame="Yes"
 noDoubles=0
 saveGameCustom=ask("Does your mod use a custom save file?")
-Stage=ask("Does your mod use the Stage folder?")
-USEUJP=ask("Does your mod use the US/EU/JP folder?")
-Object=ask("Does your mod use the Object folder?")
-Sound=ask("Does your mod use the Sound folder?")
-Layout=ask("Does your mod use the Layout folder?")
-WorldMap=ask("Does your mod use the WorldMap folder?")
-Env=ask("Does your mod use the Env folder?")
-Effect=ask("Does your mod use the Effect folder?")
-Replay=ask("Does your mod use the Replay folder?")
-rels=ask("Does your mod use the rels folder?")
-MovieDemo=ask("Does your mod use the MovieDemo folder?")
-HomeButton2=ask("Does your mod use the HomeButton2 folder?")
+xmlgenerate=ask("Generate the XML now?")
 
 f.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
 f.write("       <section name=\""+sectionName+"\">\n")
@@ -55,30 +44,9 @@ f.write("    <patch id=\""+sectionName+"\" root=\"/"+folderName+"\">\n")
 
 if saveGameCustom:
     f.write("        <savegame external=\"save/{$__gameid}{$__region}\" clone=\"false\"/>\n")
-if Stage:
-    f.write("        <folder external=\"Stage\" disc=\"/Stage\" create=\"true\"/>\n        <folder external=\"Stage/Texture\" disc=\"/Stage/Texture\" create=\"true\" />\n") 
-if USEUJP:
-    f.write("        <folder external=\"US\" disc=\"/US\" create=\"true\"/>\n        <folder external=\"EU\" disc=\"/EU\" create=\"true\" />\n        <folder external=\"JP\" disc=\"/JP\" create=\"true\" />\n")
-if Object:
-    f.write("        <folder external=\"Object\" disc=\"/Object\" create=\"true\"/>\n")
-if Sound:
-    f.write("        <folder external=\"Sound\" disc=\"/Sound\" create=\"true\"/>\n        <folder external=\"Sound/stream\" disc=\"/Sound/stream\" create=\"true\" />\n")
-if Layout:
-    f.write("        <folder external=\"Layout\" disc=\"/Layout\" create=\"true\"/>\n")
-if WorldMap:
-    f.write("        <folder external=\"WorldMap\" disc=\"/WorldMap\" create=\"true\"/>\n")
-if Env:
-    f.write("        <folder external=\"Env\" disc=\"/Env\" create=\"true\"/>\n")
-if Effect:
-    f.write("        <folder external=\"Effect\" disc=\"/Effect\" create=\"true\"/>\n")
-if Replay:
-    f.write("        <folder external=\"Replay\" disc=\"/Replay\" create=\"true\"/>\n")
-if rels:
-    f.write("        <folder external=\"rels\" disc=\"/rels\" create=\"true\"/>\n")    
-if MovieDemo: 
-    f.write("        <folder external=\"MovieDemo\" disc=\"/MovieDemo\" create=\"true\"/>\n")
-if HomeButton2:
-    f.write("        <folder external=\"HomeButton2\" disc=\"/HomeButton2\" create=\"true\"/>\n")    
+if xmlgenerate:
+    f.write("    <folder external=\"/"+folderName+"\" disc=\"/\" create=\"true\" recursive=\"true\"/>\n")
 f.write("    </patch>\n</wiidisc>")
 
 f.close()
+
