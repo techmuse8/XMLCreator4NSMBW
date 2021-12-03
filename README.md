@@ -17,4 +17,4 @@ You can then use this XML with Riivolution.
 # Credits
 - [EterSky](https://github.com/EterSky): making the original XMLCreator
 - [techmuse8](https://github.com/techmuse8): (myself) of course
-- [Danster64](https://github.com/Danster64: suggesting the order of the NSMBW folders
+- [Danster64](https://github.com/Danster64): suggesting the order of the NSMBW folders
