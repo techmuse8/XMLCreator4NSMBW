@@ -2,7 +2,9 @@
 A fork of a python program that builds a NSMBW Riivolution XML file for you.
 
 Originally forked from the release build at https://github.com/EterSky/XMLCreator
-
+# Features
+- Makes an XML with support for a single recursive directory where the user can add their replaced files
+- savegame redirection to the SD Card
 # Supported Versions
 So far, only tested on the US version and briefly tested on the EUR version. Untested on the JPN version but should work. No support for the KOR or TWN versions at this time but may come later. CHN support is probably a hard no.
 
