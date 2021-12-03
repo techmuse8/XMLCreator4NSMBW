@@ -4,7 +4,7 @@ A fork of a python program that builds a NSMBW Riivolution XML file for you.
 Originally forked from the release build at https://github.com/EterSky/XMLCreator
 
 # Supported Versions
-So far, only tested on the US version and briefly tested on the EUR version. Untested on the JPN version but should work. No support for the KOR or TWN versions at this time but may come later.
+So far, only tested on the US version and briefly tested on the EUR version. Untested on the JPN version but should work. No support for the KOR or TWN versions at this time but may come later. CHN support is probably a hard no.
 
 # How to run
 
@@ -16,5 +16,6 @@ You can then use this XML with Riivolution.
 
 # Credits
 - [EterSky](https://github.com/EterSky): making the original XMLCreator
-- [techmuse8](https://github.com/techmuse8): (myself) of course
-- [Danster64](https://github.com/Danster64): suggesting the order of the NSMBW folders
+- [techmuse8](https://github.com/techmuse8): (myself) of course and testing all of this
+- [Danster64](https://github.com/Danster64): suggesting the order of the NSMBW folders (for  1.0.0)
+- [Asu-chan](https://github.com/Asu-chan): suggesting the recursive directory XML line to save a huge amount of XML lines and more simplicity.
