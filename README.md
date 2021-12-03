@@ -1,5 +1,5 @@
 # XMLCreator4NSMBW
-A fork of a python program that builds a NSMBW XML file for you.
+A fork of a python program that builds a NSMBW Riivolution XML file for you.
 
 Originally forked from the release build at https://github.com/EterSky/XMLCreator
 
@@ -8,8 +8,13 @@ So far, only tested on the US version and briefly tested on the EUR version. Unt
 
 # How to run
 
+## Requirements
+Python 3 installed. Download here: https://www.python.org
+
 In a terminal window, run `python3 XMLCreatorNSMBW.py` (`py -3` in substitute of `python3` on Windows) and follow the on screen instructions.
+You can then use this XML with Riivolution.
 
 # Credits
 - [EterSky](https://github.com/EterSky): making the original XMLCreator
 - [techmuse8](https://github.com/techmuse8): (myself) of course
+- [Danster64](https://github.com/Danster64: suggesting the order of the NSMBW folders
