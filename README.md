@@ -21,3 +21,4 @@ You can then use the generated XML with Riivolution and HLE Riivolution on Dolph
 - [techmuse8](https://github.com/techmuse8): (myself) of course and testing all of this
 - [Danster64](https://github.com/Danster64): suggesting the order of the NSMBW folders (for  1.0.0)
 - [Asu-chan](https://github.com/Asu-chan): suggesting the recursive directory XML line to save a huge amount of XML lines and more simplicity.
+- [shibboleet](https://github.com/shibbo): suggesting the change of `f = open()` to `with open()`
