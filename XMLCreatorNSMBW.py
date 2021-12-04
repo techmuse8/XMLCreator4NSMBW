@@ -22,31 +22,33 @@ def ask(question, default="yes"):
             sys.stdout.write("Please respond with 'yes' or 'no' " "(or 'y' or 'n').\n")
 
 xmlName=str(input("Name your xml file (.xml will be automatically added to the file name"))
-f=open(xmlName+".xml", "w")
+with open(xmlName+".xml" , 'w') as file:
 
-sectionName=str(input("What is your mod name? (Short name) [Section name]"))
-optionName=str(input("What will be the message that will show up in Riivolution on the mod's page? [Option name]"))
-choiceName=str(input("What will be shown when the mod is enabled? [Choice name]"))
-folderName=str(input("What is your mod's folder name? (For example \"nsmbwtest\")"))
+    sectionName=str(input("What is your mod name? (Short name) [Section name]"))
+    optionName=str(input("What will be the message that will show up in Riivolution on the mod's page? [Option name]"))
+    choiceName=str(input("What will be shown when the mod is enabled? [Choice name]"))
+    folderName=str(input("What is your mod's folder name? (For example \"nsmbwtest\")"))
 
 saveGame="Yes"
 noDoubles=0
 saveGameCustom=ask("Does your mod use a custom save file?")
 xmlgenerate=ask("Generate the XML now?")
 
-f.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
-f.write("       <section name=\""+sectionName+"\">\n")
-f.write("           <option name=\""+optionName+"\">\n")
-f.write("               <choice name=\""+choiceName+"\">\n")
-f.write("                   <patch id=\""+sectionName+"\"/>\n")
-f.write("               </choice>\n           </option>\n       </section>\n    </options>\n")
-f.write("    <patch id=\""+sectionName+"\" root=\"/"+folderName+"\">\n")
+with open(xmlName+".xml" , 'w') as file:
 
-if saveGameCustom:
-    f.write("        <savegame external=\"save/{$__gameid}{$__region}\" clone=\"false\"/>\n")
-if xmlgenerate:
-    f.write("    <folder external=\"/"+folderName+"\" disc=\"/\" create=\"true\" recursive=\"true\"/>\n")
-f.write("    </patch>\n</wiidisc>")
+    file.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
+    file.write("       <section name=\""+sectionName+"\">\n")
+    file.write("           <option name=\""+optionName+"\">\n")
+    file.write("               <choice name=\""+choiceName+"\">\n")
+    file.write("                   <patch id=\""+sectionName+"\"/>\n")
+    file.write("               </choice>\n           </option>\n       </section>\n    </options>\n")
+    file.write("    <patch id=\""+sectionName+"\">\n")
 
-f.close()
+    if saveGameCustom:
+            file.write("        <savegame external=\"save/{$__gameid}{$__region}\" clone=\"false\"/>\n")
+    if xmlgenerate:
+            file.write("    <folder external=\"/"+folderName+"\" disc=\"/\" create=\"true\" recursive=\"true\"/>\n")
+    file.write("    </patch>\n</wiidisc>")
+
+file.close()
 
