@@ -1,5 +1,5 @@
 # XMLCreator4NSMBW
-A fork of a python program that builds a NSMBW Riivolution XML file for you.
+A fork of a python program that builds a New Super Mario Bros. Wii (NSMBW) Riivolution XML file for you.
 
 Originally forked from the release build at https://github.com/EterSky/XMLCreator
 # Features
