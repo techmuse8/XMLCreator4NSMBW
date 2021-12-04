@@ -32,7 +32,7 @@ with open(xmlName+".xml" , 'w') as file:
 saveGame="Yes"
 noDoubles=0
 saveGameCustom=ask("Does your mod use a custom save file?")
-xmlgenerate=ask("Generate the XML ow?")
+xmlgenerate=ask("Generate the XML now?")
 
 with open(xmlName+".xml" , 'w') as file:
 
