@@ -49,6 +49,4 @@ with open(xmlName+".xml" , 'w') as file:
     if xmlgenerate:
             file.write("    <folder external=\"/"+folderName+"\" disc=\"/\" create=\"true\" recursive=\"true\"/>\n")
     file.write("    </patch>\n</wiidisc>")
-
-file.close()
-
+   
