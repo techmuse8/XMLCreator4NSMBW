@@ -36,7 +36,7 @@ xmlgenerate=ask("Generate the XML now?")
 
 with open(xmlName+".xml" , 'w') as file:
 
-    file.write("<!-- XML created by XMLCreator4NSMBW -->\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
+    file.write("<!-- XML created by XMLCreator4NSMBW --> (feel free to remove this line)\n<wiidisc version=\"1\">\n    <id game=\"SMN\"/>\n       <region type=\"E\"/>\n       <region type=\"J\"/>\n       <region type=\"P\"/>\n       <options>\n")
     file.write("       <section name=\""+sectionName+"\">\n")
     file.write("           <option name=\""+optionName+"\">\n")
     file.write("               <choice name=\""+choiceName+"\">\n")
